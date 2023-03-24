@@ -10,5 +10,24 @@ function numberFromArray($index) {
   return $array[$index];
 }
 
+//zad2.2
+function checkMyNationality($country){
+    $nationalities = array(
+      'Poland' => 'Polish',
+      'Germany' => 'German',
+      'France' => 'French',
+      'Italy' => 'Italian',
+      'Spain' => 'Spanish'
+    );
+    
+    if(array_key_exists($country, $nationalities)){
+      return $nationalities[$country];
+    } 
+    else {
+      return 'Unknown country/nationality';
+    }
+  }
+
 //echo returnNumberFromArray(7);
+//echo checkNationality('Italy');
 ?>
