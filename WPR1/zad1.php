@@ -16,7 +16,7 @@ function censorSentence($sentence){
 }
 
 //zad 1.4
-function extractBirthday($pesel): string{
+function extractBirthdayDate($pesel): string{
     $day = substr($pesel, 4, 2);
     $month = substr($pesel, 2, 2);
     $year = substr($pesel, 0, 2);
@@ -27,7 +27,7 @@ function extractBirthday($pesel): string{
             : $month - 20;
      }
 
-    return "Data urodzenia: $day/$month/$year";
+    return "Date: $day/$month/$year";
 }
 
 //zad 1.5
@@ -56,7 +56,7 @@ function triangleArea() {
     echo "The area: " . $area;
   }
   
-  $figure = readline("Enter the name of the figure (triangle, rectangle, trapezoid): ");
+  $figure = readline("Enter name of the figure (triangle, rectangle, trapezoid): ");
   
   switch ($figure) {
     case 'triangle':
@@ -66,7 +66,7 @@ function triangleArea() {
         rectangleArea();
         break;
     case 'trapezoid':
-        ctrapezoidArea();
+        trapezoidArea();
         break;
     default:
         echo "Invalid input\n";
@@ -75,5 +75,5 @@ function triangleArea() {
 //echo simulateDice();
 //echo circleDiameter(4);
 //echo censorSentence("Ale kurde pogoda brzydka");
-//echo extractBirthday(00311306791)
+//echo extractBirthdayDate(00311306791)
 ?>
