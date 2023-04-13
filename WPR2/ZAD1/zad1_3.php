@@ -66,7 +66,7 @@
 
 			$serializedData = htmlspecialchars(serialize($data));
 
-			echo '<form method="POST" action="processGuestsForm.php">';
+			echo '<form method="POST" action="guests.php">';
 			for ($i = 1; $i <= $numOfGuests; $i++) {
 				echo '<label for="first_names' . $i . '">Imie ' . $i . ': </label>';
 				echo '<input type="text" name="first_names[]' . $i . '" id="first_names' . $i . '">';
